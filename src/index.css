@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: black;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 40px;
+}
+.profile-image{
+    /* left:30rem; */
+    
+    right: 0;
+    top: -2;
+}
+
+.intro{
+    border-bottom: 1px solid rgb(163, 163, 163);
+    padding-bottom: 180px;
+}
+
+.expertise h1{
+    @apply text-4xl font-bold;
+}
+
+.expertise p{
+    @apply text-sm text-gray-400;
+}
+
+.footer{
+    height: 500px;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em; /* Adjust the width as needed */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+
+  a[href='https://www.linkedin.com/in/saad-rahman-59696a1bb/']:hover{
+    @apply text-blue-600 transition-colors ease-in-out delay-200;
+  }
+
+  .project:hover{
+    @apply opacity-50 cursor-pointer transition-opacity ease-in delay-150;
+  }
